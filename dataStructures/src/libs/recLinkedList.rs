@@ -77,7 +77,7 @@ impl<T: std::fmt::Debug + std::fmt::Display + PartialOrd + Clone> LinkedList<T> 
             LinkedList::NonEmpty(node) => {
                 println!("checking {:?}", node.value);
                 //if moving head node
-                //make start of list next ndoe
+                //make start of list next node
 
                 if node.value == item {
                     println!("removing {:?}", node.value);

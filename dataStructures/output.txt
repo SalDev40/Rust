@@ -1,0 +1,78 @@
+ADDED: 10
+CURRENT TREE -> NonEmptyTree(
+    Node {
+        data: 10,
+        left: EmptyTree,
+        right: EmptyTree,
+    },
+) 
+
+GOING RIGHT 10 (node) > 20 (data)
+ADDED: 20
+CURRENT TREE -> NonEmptyTree(
+    Node {
+        data: 10,
+        left: EmptyTree,
+        right: NonEmptyTree(
+            Node {
+                data: 20,
+                left: EmptyTree,
+                right: EmptyTree,
+            },
+        ),
+    },
+) 
+
+GOING LEFT 5 (data) <= 10 (node)
+ADDED: 5
+CURRENT TREE -> NonEmptyTree(
+    Node {
+        data: 10,
+        left: NonEmptyTree(
+            Node {
+                data: 5,
+                left: EmptyTree,
+                right: EmptyTree,
+            },
+        ),
+        right: NonEmptyTree(
+            Node {
+                data: 20,
+                left: EmptyTree,
+                right: EmptyTree,
+            },
+        ),
+    },
+) 
+
+GOING RIGHT 10 (node) > 16 (data)
+GOING LEFT 16 (data) <= 20 (node)
+ADDED: 16
+CURRENT TREE -> NonEmptyTree(
+    Node {
+        data: 10,
+        left: NonEmptyTree(
+            Node {
+                data: 5,
+                left: EmptyTree,
+                right: EmptyTree,
+            },
+        ),
+        right: NonEmptyTree(
+            Node {
+                data: 20,
+                left: NonEmptyTree(
+                    Node {
+                        data: 16,
+                        left: EmptyTree,
+                        right: EmptyTree,
+                    },
+                ),
+                right: EmptyTree,
+            },
+        ),
+    },
+) 
+
+GOING LEFT 5 (item) <= 10 (node)
+found -> 1
