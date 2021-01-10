@@ -1,6 +1,8 @@
 mod libs;
 use crate::libs::linkedList;
+use crate::libs::recLinkedList;
 
 fn main() {
-    linkedList::linkMain();
+    // linkedList::linkMain();
+    recLinkedList::recLinkMain();
 }

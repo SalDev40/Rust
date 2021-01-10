@@ -8,6 +8,7 @@ use std::fmt::Debug;
 use std::io::{Error, ErrorKind};
 use std::rc::Rc;
 
+
 #[derive(Debug)]
 struct Node<T> {
     data: T,
@@ -25,7 +26,7 @@ impl<T> Node<T> {
     }
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug)]
 struct LinkedList<T>
 where
     T: Copy,
@@ -37,7 +38,7 @@ where
 }
 
 /* Implement iterator for linkedList */
-impl<T: Copy + Debug> Iterator for LinkedList<T> {
+impl<T: Copy> Iterator for LinkedList<T> {
     type Item = T;
     fn next(&mut self) -> Option<Self::Item> {
         let curNode;
@@ -209,6 +210,8 @@ pub fn linkMain() {
     // println!("list: {:#?}", list.head);
     // println!("list: {:#?}", list.tail);
 }
+
+
 
 impl<T: Debug + PartialEq + Copy> LinkedList<T> {
     pub fn addDiff2(&mut self, data: T) {
